@@ -22,12 +22,12 @@
     WPView *view1 = [WPView viewWithTapClick:^(id other) {
         
         // 快速创建一个item弹框 items 可以是 @[@"string",@"string"] 也可以是 @[@[@"string"],@[@"string"]]
-//[WPAlertControl alertItemsForRootControl:<#(UIViewController *)#> animateType:<#(WPAlertAnimateType)#> items:<#(NSArray *)#> index:<#^NSArray<WPAlertGroup *> *(NSInteger index, NSUInteger alertLevel, WPAlertControl *alertControl)index#>]
-//        到中心只需要设置 constant == -1
+        //[WPAlertControl alertItemsForRootControl:<#(UIViewController *)#> animateType:<#(WPAlertAnimateType)#> items:<#(NSArray *)#> index:<#^NSArray<WPAlertGroup *> *(NSInteger index, NSUInteger alertLevel, WPAlertControl *alertControl)index#>]
+        //        到中心只需要设置 constant == -1
         [self itemsAlert];
     }];
     view1.text = @"item弹框";
-
+    
     WPView *view2 = [WPView viewWithTapClick:^(id other) {
         [self bottemAlert];
     }];
@@ -37,17 +37,17 @@
         [self rightAlert];
     }];
     view3.text = @"右边弹框";
-
+    
     WPView *view4 = [WPView viewWithTapClick:^(id other) {
         [self centerAlert];
     }];
     view4.text = @"中心弹框";
-
+    
     WPView *view5 = [WPView viewWithTapClick:^(id other) {
         [self leftAlert];
     }];
     view5.text = @"左边弹框";
-
+    
     WPView *view6 = [WPView viewWithTapClick:^(id other) {
         [self topAlert];
     }];
@@ -66,7 +66,7 @@
     view4.frame = CGRectMake(view2.frame.origin.x, view3.frame.origin.y, 100, 100);
     view5.frame = CGRectMake(view1.frame.origin.x, 350, 100, 100);
     view6.frame = CGRectMake(view4.frame.origin.x, view5.frame.origin.y, 100, 100);
-
+    
     [self.view addSubview:view1];
     [self.view addSubview:view2];
     [self.view addSubview:view3];
@@ -124,22 +124,22 @@
 {
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
     WPView *view1 = [WPView viewWithTapClick:^(id other) {
-
+        
         [WPAlertControl alertHiddenForRootControl:self completion:^(WPAlertShowStatus status, WPAlertControl *alertControl) {
-
+            
             WPView *view2 = [WPView viewWithTapClick:^(id other) {
                 [WPAlertControl alertHiddenForRootControl:self completion:nil];
             }];
             view2.frame = CGRectMake(0, 0, screenSize.width, 300);
             view2.backgroundColor = [UIColor blueColor];
             alertControl.pushAnimateView =  view2;
-
+            
         }];
         
     }];
     view1.frame = CGRectMake(0, 0, screenSize.width, 150);
     view1.backgroundColor = [UIColor redColor];
-   
+    
     [WPAlertControl alertForView:view1 begin:WPAlertBeginBottem end:WPAlertEndBottem animateType:WPAlertAnimateDefault constant:0 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self mackClick:nil animateStatus:nil];
 }
 
@@ -167,7 +167,7 @@
 
 - (void)leftAlert
 {
-
+    
     WPView *view1 = [WPView viewWithTapClick:^(id other) {
         
         [WPAlertControl alertHiddenForRootControl:self completion:^(WPAlertShowStatus status, WPAlertControl *alertControl) {
@@ -248,7 +248,7 @@
             WPAlertGroup *g = [WPAlertGroup group:@[i0,i1,i2]];
             g.groupView.text = @"请问您喜欢什么?";
             return @[g];
-
+            
         }else if (index==1){ // 选择了女
             WPAlertItem *i0 = [WPAlertItem itemSettingCell:^(WPAlertControlCell *cell) {
                 cell.textLabel.text = @"买衣服";
@@ -258,15 +258,15 @@
                 cell.textLabel.text = @"吃喝";
                 cell.detailTextLabel.text = @"子标题";
             }];
-
+            
             WPAlertGroup *g = [WPAlertGroup group:@[i0,i1]];
             g.groupView.text = @"请问您喜欢什么?";
             return @[g];
         }
     }else if (level == 2){ // 第二次弹框
-
+        
         WPAlertItem *item = [WPAlertItem item:@"弹框"];
-
+        
         WPAlertGroup *g = [WPAlertGroup group:@[item]];
         g.groupView.text = @"多组弹框";
         g.groupView.textColor = [UIColor blueColor];

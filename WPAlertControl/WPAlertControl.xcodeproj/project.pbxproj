@@ -7,74 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BE63B56224873B500BBAA6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B55224873B500BBAA6F /* AppDelegate.m */; };
-		8BE63B59224873B500BBAA6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B58224873B500BBAA6F /* ViewController.m */; };
-		8BE63B5C224873B500BBAA6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE63B5A224873B500BBAA6F /* Main.storyboard */; };
-		8BE63B5E224873B700BBAA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE63B5D224873B700BBAA6F /* Assets.xcassets */; };
-		8BE63B61224873B700BBAA6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE63B5F224873B700BBAA6F /* LaunchScreen.storyboard */; };
-		8BE63B64224873B700BBAA6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B63224873B700BBAA6F /* main.m */; };
-		8BE63B6E224873B700BBAA6F /* WPAlertControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B6D224873B700BBAA6F /* WPAlertControlTests.m */; };
-		8BE63B79224873B700BBAA6F /* WPAlertControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B78224873B700BBAA6F /* WPAlertControlUITests.m */; };
-		8BE63B88224873CA00BBAA6F /* WPAlertControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B87224873CA00BBAA6F /* WPAlertControl.m */; };
-		8BE63B912248BB4F00BBAA6F /* WPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B902248BB4F00BBAA6F /* WPView.m */; };
+		8BE27593224A0E32003E0612 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE27592224A0E32003E0612 /* AppDelegate.m */; };
+		8BE27596224A0E32003E0612 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE27595224A0E32003E0612 /* ViewController.m */; };
+		8BE27599224A0E32003E0612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE27597224A0E32003E0612 /* Main.storyboard */; };
+		8BE2759B224A0E34003E0612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE2759A224A0E34003E0612 /* Assets.xcassets */; };
+		8BE2759E224A0E34003E0612 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE2759C224A0E34003E0612 /* LaunchScreen.storyboard */; };
+		8BE275A1224A0E34003E0612 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE275A0224A0E34003E0612 /* main.m */; };
+		8BE275AB224A0E34003E0612 /* WPAlertControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE275AA224A0E34003E0612 /* WPAlertControlTests.m */; };
+		8BE275B6224A0E34003E0612 /* WPAlertControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE275B5224A0E34003E0612 /* WPAlertControlUITests.m */; };
+		8BE275C7224A0E5E003E0612 /* WPAlertControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE275C5224A0E5D003E0612 /* WPAlertControl.m */; };
+		8BE275C8224A0E5E003E0612 /* WPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE275C6224A0E5E003E0612 /* WPView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8BE63B6A224873B700BBAA6F /* PBXContainerItemProxy */ = {
+		8BE275A7224A0E34003E0612 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8BE63B49224873B500BBAA6F /* Project object */;
+			containerPortal = 8BE27586224A0E32003E0612 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8BE63B50224873B500BBAA6F;
+			remoteGlobalIDString = 8BE2758D224A0E32003E0612;
 			remoteInfo = WPAlertControl;
 		};
-		8BE63B75224873B700BBAA6F /* PBXContainerItemProxy */ = {
+		8BE275B2224A0E34003E0612 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8BE63B49224873B500BBAA6F /* Project object */;
+			containerPortal = 8BE27586224A0E32003E0612 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8BE63B50224873B500BBAA6F;
+			remoteGlobalIDString = 8BE2758D224A0E32003E0612;
 			remoteInfo = WPAlertControl;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8BE63B51224873B500BBAA6F /* WPAlertControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPAlertControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BE63B54224873B500BBAA6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8BE63B55224873B500BBAA6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8BE63B57224873B500BBAA6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8BE63B58224873B500BBAA6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8BE63B5B224873B500BBAA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8BE63B5D224873B700BBAA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8BE63B60224873B700BBAA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8BE63B62224873B700BBAA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BE63B63224873B700BBAA6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8BE63B69224873B700BBAA6F /* WPAlertControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPAlertControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BE63B6D224873B700BBAA6F /* WPAlertControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPAlertControlTests.m; sourceTree = "<group>"; };
-		8BE63B6F224873B700BBAA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BE63B74224873B700BBAA6F /* WPAlertControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPAlertControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BE63B78224873B700BBAA6F /* WPAlertControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPAlertControlUITests.m; sourceTree = "<group>"; };
-		8BE63B7A224873B700BBAA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BE63B86224873CA00BBAA6F /* WPAlertControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAlertControl.h; sourceTree = "<group>"; };
-		8BE63B87224873CA00BBAA6F /* WPAlertControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAlertControl.m; sourceTree = "<group>"; };
-		8BE63B8F2248BB4F00BBAA6F /* WPView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPView.h; sourceTree = "<group>"; };
-		8BE63B902248BB4F00BBAA6F /* WPView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPView.m; sourceTree = "<group>"; };
+		8BE2758E224A0E32003E0612 /* WPAlertControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPAlertControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE27591224A0E32003E0612 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BE27592224A0E32003E0612 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BE27594224A0E32003E0612 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8BE27595224A0E32003E0612 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8BE27598224A0E32003E0612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BE2759A224A0E34003E0612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BE2759D224A0E34003E0612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BE2759F224A0E34003E0612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE275A0224A0E34003E0612 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BE275A6224A0E34003E0612 /* WPAlertControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPAlertControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE275AA224A0E34003E0612 /* WPAlertControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPAlertControlTests.m; sourceTree = "<group>"; };
+		8BE275AC224A0E34003E0612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE275B1224A0E34003E0612 /* WPAlertControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPAlertControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE275B5224A0E34003E0612 /* WPAlertControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPAlertControlUITests.m; sourceTree = "<group>"; };
+		8BE275B7224A0E34003E0612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE275C3224A0E5D003E0612 /* WPAlertControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAlertControl.h; sourceTree = "<group>"; };
+		8BE275C4224A0E5D003E0612 /* WPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPView.h; sourceTree = "<group>"; };
+		8BE275C5224A0E5D003E0612 /* WPAlertControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAlertControl.m; sourceTree = "<group>"; };
+		8BE275C6224A0E5E003E0612 /* WPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8BE63B4E224873B500BBAA6F /* Frameworks */ = {
+		8BE2758B224A0E32003E0612 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BE63B66224873B700BBAA6F /* Frameworks */ = {
+		8BE275A3224A0E34003E0612 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BE63B71224873B700BBAA6F /* Frameworks */ = {
+		8BE275AE224A0E34003E0612 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,60 +84,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8BE63B48224873B500BBAA6F = {
+		8BE27585224A0E32003E0612 = {
 			isa = PBXGroup;
 			children = (
-				8BE63B53224873B500BBAA6F /* WPAlertControl */,
-				8BE63B6C224873B700BBAA6F /* WPAlertControlTests */,
-				8BE63B77224873B700BBAA6F /* WPAlertControlUITests */,
-				8BE63B52224873B500BBAA6F /* Products */,
+				8BE27590224A0E32003E0612 /* WPAlertControl */,
+				8BE275A9224A0E34003E0612 /* WPAlertControlTests */,
+				8BE275B4224A0E34003E0612 /* WPAlertControlUITests */,
+				8BE2758F224A0E32003E0612 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8BE63B52224873B500BBAA6F /* Products */ = {
+		8BE2758F224A0E32003E0612 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BE63B51224873B500BBAA6F /* WPAlertControl.app */,
-				8BE63B69224873B700BBAA6F /* WPAlertControlTests.xctest */,
-				8BE63B74224873B700BBAA6F /* WPAlertControlUITests.xctest */,
+				8BE2758E224A0E32003E0612 /* WPAlertControl.app */,
+				8BE275A6224A0E34003E0612 /* WPAlertControlTests.xctest */,
+				8BE275B1224A0E34003E0612 /* WPAlertControlUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8BE63B53224873B500BBAA6F /* WPAlertControl */ = {
+		8BE27590224A0E32003E0612 /* WPAlertControl */ = {
 			isa = PBXGroup;
 			children = (
-				8BE63B86224873CA00BBAA6F /* WPAlertControl.h */,
-				8BE63B87224873CA00BBAA6F /* WPAlertControl.m */,
-				8BE63B54224873B500BBAA6F /* AppDelegate.h */,
-				8BE63B55224873B500BBAA6F /* AppDelegate.m */,
-				8BE63B57224873B500BBAA6F /* ViewController.h */,
-				8BE63B58224873B500BBAA6F /* ViewController.m */,
-				8BE63B5A224873B500BBAA6F /* Main.storyboard */,
-				8BE63B5D224873B700BBAA6F /* Assets.xcassets */,
-				8BE63B5F224873B700BBAA6F /* LaunchScreen.storyboard */,
-				8BE63B62224873B700BBAA6F /* Info.plist */,
-				8BE63B63224873B700BBAA6F /* main.m */,
-				8BE63B8F2248BB4F00BBAA6F /* WPView.h */,
-				8BE63B902248BB4F00BBAA6F /* WPView.m */,
+				8BE275C3224A0E5D003E0612 /* WPAlertControl.h */,
+				8BE275C5224A0E5D003E0612 /* WPAlertControl.m */,
+				8BE275C4224A0E5D003E0612 /* WPView.h */,
+				8BE275C6224A0E5E003E0612 /* WPView.m */,
+				8BE27591224A0E32003E0612 /* AppDelegate.h */,
+				8BE27592224A0E32003E0612 /* AppDelegate.m */,
+				8BE27594224A0E32003E0612 /* ViewController.h */,
+				8BE27595224A0E32003E0612 /* ViewController.m */,
+				8BE27597224A0E32003E0612 /* Main.storyboard */,
+				8BE2759A224A0E34003E0612 /* Assets.xcassets */,
+				8BE2759C224A0E34003E0612 /* LaunchScreen.storyboard */,
+				8BE2759F224A0E34003E0612 /* Info.plist */,
+				8BE275A0224A0E34003E0612 /* main.m */,
 			);
 			path = WPAlertControl;
 			sourceTree = "<group>";
 		};
-		8BE63B6C224873B700BBAA6F /* WPAlertControlTests */ = {
+		8BE275A9224A0E34003E0612 /* WPAlertControlTests */ = {
 			isa = PBXGroup;
 			children = (
-				8BE63B6D224873B700BBAA6F /* WPAlertControlTests.m */,
-				8BE63B6F224873B700BBAA6F /* Info.plist */,
+				8BE275AA224A0E34003E0612 /* WPAlertControlTests.m */,
+				8BE275AC224A0E34003E0612 /* Info.plist */,
 			);
 			path = WPAlertControlTests;
 			sourceTree = "<group>";
 		};
-		8BE63B77224873B700BBAA6F /* WPAlertControlUITests */ = {
+		8BE275B4224A0E34003E0612 /* WPAlertControlUITests */ = {
 			isa = PBXGroup;
 			children = (
-				8BE63B78224873B700BBAA6F /* WPAlertControlUITests.m */,
-				8BE63B7A224873B700BBAA6F /* Info.plist */,
+				8BE275B5224A0E34003E0612 /* WPAlertControlUITests.m */,
+				8BE275B7224A0E34003E0612 /* Info.plist */,
 			);
 			path = WPAlertControlUITests;
 			sourceTree = "<group>";
@@ -145,13 +145,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BE63B50224873B500BBAA6F /* WPAlertControl */ = {
+		8BE2758D224A0E32003E0612 /* WPAlertControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BE63B7D224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControl" */;
+			buildConfigurationList = 8BE275BA224A0E34003E0612 /* Build configuration list for PBXNativeTarget "WPAlertControl" */;
 			buildPhases = (
-				8BE63B4D224873B500BBAA6F /* Sources */,
-				8BE63B4E224873B500BBAA6F /* Frameworks */,
-				8BE63B4F224873B500BBAA6F /* Resources */,
+				8BE2758A224A0E32003E0612 /* Sources */,
+				8BE2758B224A0E32003E0612 /* Frameworks */,
+				8BE2758C224A0E32003E0612 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -159,68 +159,68 @@
 			);
 			name = WPAlertControl;
 			productName = WPAlertControl;
-			productReference = 8BE63B51224873B500BBAA6F /* WPAlertControl.app */;
+			productReference = 8BE2758E224A0E32003E0612 /* WPAlertControl.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8BE63B68224873B700BBAA6F /* WPAlertControlTests */ = {
+		8BE275A5224A0E34003E0612 /* WPAlertControlTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BE63B80224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControlTests" */;
+			buildConfigurationList = 8BE275BD224A0E34003E0612 /* Build configuration list for PBXNativeTarget "WPAlertControlTests" */;
 			buildPhases = (
-				8BE63B65224873B700BBAA6F /* Sources */,
-				8BE63B66224873B700BBAA6F /* Frameworks */,
-				8BE63B67224873B700BBAA6F /* Resources */,
+				8BE275A2224A0E34003E0612 /* Sources */,
+				8BE275A3224A0E34003E0612 /* Frameworks */,
+				8BE275A4224A0E34003E0612 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8BE63B6B224873B700BBAA6F /* PBXTargetDependency */,
+				8BE275A8224A0E34003E0612 /* PBXTargetDependency */,
 			);
 			name = WPAlertControlTests;
 			productName = WPAlertControlTests;
-			productReference = 8BE63B69224873B700BBAA6F /* WPAlertControlTests.xctest */;
+			productReference = 8BE275A6224A0E34003E0612 /* WPAlertControlTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8BE63B73224873B700BBAA6F /* WPAlertControlUITests */ = {
+		8BE275B0224A0E34003E0612 /* WPAlertControlUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BE63B83224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControlUITests" */;
+			buildConfigurationList = 8BE275C0224A0E34003E0612 /* Build configuration list for PBXNativeTarget "WPAlertControlUITests" */;
 			buildPhases = (
-				8BE63B70224873B700BBAA6F /* Sources */,
-				8BE63B71224873B700BBAA6F /* Frameworks */,
-				8BE63B72224873B700BBAA6F /* Resources */,
+				8BE275AD224A0E34003E0612 /* Sources */,
+				8BE275AE224A0E34003E0612 /* Frameworks */,
+				8BE275AF224A0E34003E0612 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8BE63B76224873B700BBAA6F /* PBXTargetDependency */,
+				8BE275B3224A0E34003E0612 /* PBXTargetDependency */,
 			);
 			name = WPAlertControlUITests;
 			productName = WPAlertControlUITests;
-			productReference = 8BE63B74224873B700BBAA6F /* WPAlertControlUITests.xctest */;
+			productReference = 8BE275B1224A0E34003E0612 /* WPAlertControlUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8BE63B49224873B500BBAA6F /* Project object */ = {
+		8BE27586224A0E32003E0612 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Developer;
 				TargetAttributes = {
-					8BE63B50224873B500BBAA6F = {
+					8BE2758D224A0E32003E0612 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					8BE63B68224873B700BBAA6F = {
+					8BE275A5224A0E34003E0612 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 8BE63B50224873B500BBAA6F;
+						TestTargetID = 8BE2758D224A0E32003E0612;
 					};
-					8BE63B73224873B700BBAA6F = {
+					8BE275B0224A0E34003E0612 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 8BE63B50224873B500BBAA6F;
+						TestTargetID = 8BE2758D224A0E32003E0612;
 					};
 				};
 			};
-			buildConfigurationList = 8BE63B4C224873B500BBAA6F /* Build configuration list for PBXProject "WPAlertControl" */;
+			buildConfigurationList = 8BE27589224A0E32003E0612 /* Build configuration list for PBXProject "WPAlertControl" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -228,37 +228,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 8BE63B48224873B500BBAA6F;
-			productRefGroup = 8BE63B52224873B500BBAA6F /* Products */;
+			mainGroup = 8BE27585224A0E32003E0612;
+			productRefGroup = 8BE2758F224A0E32003E0612 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BE63B50224873B500BBAA6F /* WPAlertControl */,
-				8BE63B68224873B700BBAA6F /* WPAlertControlTests */,
-				8BE63B73224873B700BBAA6F /* WPAlertControlUITests */,
+				8BE2758D224A0E32003E0612 /* WPAlertControl */,
+				8BE275A5224A0E34003E0612 /* WPAlertControlTests */,
+				8BE275B0224A0E34003E0612 /* WPAlertControlUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8BE63B4F224873B500BBAA6F /* Resources */ = {
+		8BE2758C224A0E32003E0612 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BE63B61224873B700BBAA6F /* LaunchScreen.storyboard in Resources */,
-				8BE63B5E224873B700BBAA6F /* Assets.xcassets in Resources */,
-				8BE63B5C224873B500BBAA6F /* Main.storyboard in Resources */,
+				8BE2759E224A0E34003E0612 /* LaunchScreen.storyboard in Resources */,
+				8BE2759B224A0E34003E0612 /* Assets.xcassets in Resources */,
+				8BE27599224A0E32003E0612 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BE63B67224873B700BBAA6F /* Resources */ = {
+		8BE275A4224A0E34003E0612 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BE63B72224873B700BBAA6F /* Resources */ = {
+		8BE275AF224A0E34003E0612 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,62 +268,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8BE63B4D224873B500BBAA6F /* Sources */ = {
+		8BE2758A224A0E32003E0612 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BE63B59224873B500BBAA6F /* ViewController.m in Sources */,
-				8BE63B64224873B700BBAA6F /* main.m in Sources */,
-				8BE63B912248BB4F00BBAA6F /* WPView.m in Sources */,
-				8BE63B56224873B500BBAA6F /* AppDelegate.m in Sources */,
-				8BE63B88224873CA00BBAA6F /* WPAlertControl.m in Sources */,
+				8BE27596224A0E32003E0612 /* ViewController.m in Sources */,
+				8BE275A1224A0E34003E0612 /* main.m in Sources */,
+				8BE27593224A0E32003E0612 /* AppDelegate.m in Sources */,
+				8BE275C7224A0E5E003E0612 /* WPAlertControl.m in Sources */,
+				8BE275C8224A0E5E003E0612 /* WPView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BE63B65224873B700BBAA6F /* Sources */ = {
+		8BE275A2224A0E34003E0612 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BE63B6E224873B700BBAA6F /* WPAlertControlTests.m in Sources */,
+				8BE275AB224A0E34003E0612 /* WPAlertControlTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BE63B70224873B700BBAA6F /* Sources */ = {
+		8BE275AD224A0E34003E0612 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BE63B79224873B700BBAA6F /* WPAlertControlUITests.m in Sources */,
+				8BE275B6224A0E34003E0612 /* WPAlertControlUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8BE63B6B224873B700BBAA6F /* PBXTargetDependency */ = {
+		8BE275A8224A0E34003E0612 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8BE63B50224873B500BBAA6F /* WPAlertControl */;
-			targetProxy = 8BE63B6A224873B700BBAA6F /* PBXContainerItemProxy */;
+			target = 8BE2758D224A0E32003E0612 /* WPAlertControl */;
+			targetProxy = 8BE275A7224A0E34003E0612 /* PBXContainerItemProxy */;
 		};
-		8BE63B76224873B700BBAA6F /* PBXTargetDependency */ = {
+		8BE275B3224A0E34003E0612 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8BE63B50224873B500BBAA6F /* WPAlertControl */;
-			targetProxy = 8BE63B75224873B700BBAA6F /* PBXContainerItemProxy */;
+			target = 8BE2758D224A0E32003E0612 /* WPAlertControl */;
+			targetProxy = 8BE275B2224A0E34003E0612 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8BE63B5A224873B500BBAA6F /* Main.storyboard */ = {
+		8BE27597224A0E32003E0612 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8BE63B5B224873B500BBAA6F /* Base */,
+				8BE27598224A0E32003E0612 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8BE63B5F224873B700BBAA6F /* LaunchScreen.storyboard */ = {
+		8BE2759C224A0E34003E0612 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8BE63B60224873B700BBAA6F /* Base */,
+				8BE2759D224A0E34003E0612 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -331,7 +331,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8BE63B7B224873B700BBAA6F /* Debug */ = {
+		8BE275B8224A0E34003E0612 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -390,7 +390,7 @@
 			};
 			name = Debug;
 		};
-		8BE63B7C224873B700BBAA6F /* Release */ = {
+		8BE275B9224A0E34003E0612 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -443,7 +443,7 @@
 			};
 			name = Release;
 		};
-		8BE63B7E224873B700BBAA6F /* Debug */ = {
+		8BE275BB224A0E34003E0612 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -460,7 +460,7 @@
 			};
 			name = Debug;
 		};
-		8BE63B7F224873B700BBAA6F /* Release */ = {
+		8BE275BC224A0E34003E0612 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -477,7 +477,7 @@
 			};
 			name = Release;
 		};
-		8BE63B81224873B700BBAA6F /* Debug */ = {
+		8BE275BE224A0E34003E0612 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,7 +496,7 @@
 			};
 			name = Debug;
 		};
-		8BE63B82224873B700BBAA6F /* Release */ = {
+		8BE275BF224A0E34003E0612 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,7 +515,7 @@
 			};
 			name = Release;
 		};
-		8BE63B84224873B700BBAA6F /* Debug */ = {
+		8BE275C1224A0E34003E0612 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -533,7 +533,7 @@
 			};
 			name = Debug;
 		};
-		8BE63B85224873B700BBAA6F /* Release */ = {
+		8BE275C2224A0E34003E0612 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -554,43 +554,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BE63B4C224873B500BBAA6F /* Build configuration list for PBXProject "WPAlertControl" */ = {
+		8BE27589224A0E32003E0612 /* Build configuration list for PBXProject "WPAlertControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BE63B7B224873B700BBAA6F /* Debug */,
-				8BE63B7C224873B700BBAA6F /* Release */,
+				8BE275B8224A0E34003E0612 /* Debug */,
+				8BE275B9224A0E34003E0612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BE63B7D224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControl" */ = {
+		8BE275BA224A0E34003E0612 /* Build configuration list for PBXNativeTarget "WPAlertControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BE63B7E224873B700BBAA6F /* Debug */,
-				8BE63B7F224873B700BBAA6F /* Release */,
+				8BE275BB224A0E34003E0612 /* Debug */,
+				8BE275BC224A0E34003E0612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BE63B80224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControlTests" */ = {
+		8BE275BD224A0E34003E0612 /* Build configuration list for PBXNativeTarget "WPAlertControlTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BE63B81224873B700BBAA6F /* Debug */,
-				8BE63B82224873B700BBAA6F /* Release */,
+				8BE275BE224A0E34003E0612 /* Debug */,
+				8BE275BF224A0E34003E0612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BE63B83224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControlUITests" */ = {
+		8BE275C0224A0E34003E0612 /* Build configuration list for PBXNativeTarget "WPAlertControlUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BE63B84224873B700BBAA6F /* Debug */,
-				8BE63B85224873B700BBAA6F /* Release */,
+				8BE275C1224A0E34003E0612 /* Debug */,
+				8BE275C2224A0E34003E0612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8BE63B49224873B500BBAA6F /* Project object */;
+	rootObject = 8BE27586224A0E32003E0612 /* Project object */;
 }
