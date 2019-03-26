@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BE63B56224873B500BBAA6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B55224873B500BBAA6F /* AppDelegate.m */; };
+		8BE63B59224873B500BBAA6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B58224873B500BBAA6F /* ViewController.m */; };
+		8BE63B5C224873B500BBAA6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE63B5A224873B500BBAA6F /* Main.storyboard */; };
+		8BE63B5E224873B700BBAA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE63B5D224873B700BBAA6F /* Assets.xcassets */; };
+		8BE63B61224873B700BBAA6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE63B5F224873B700BBAA6F /* LaunchScreen.storyboard */; };
+		8BE63B64224873B700BBAA6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B63224873B700BBAA6F /* main.m */; };
+		8BE63B6E224873B700BBAA6F /* WPAlertControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B6D224873B700BBAA6F /* WPAlertControlTests.m */; };
+		8BE63B79224873B700BBAA6F /* WPAlertControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B78224873B700BBAA6F /* WPAlertControlUITests.m */; };
+		8BE63B88224873CA00BBAA6F /* WPAlertControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B87224873CA00BBAA6F /* WPAlertControl.m */; };
+		8BE63B912248BB4F00BBAA6F /* WPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE63B902248BB4F00BBAA6F /* WPView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BE63B6A224873B700BBAA6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BE63B49224873B500BBAA6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE63B50224873B500BBAA6F;
+			remoteInfo = WPAlertControl;
+		};
+		8BE63B75224873B700BBAA6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BE63B49224873B500BBAA6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE63B50224873B500BBAA6F;
+			remoteInfo = WPAlertControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BE63B51224873B500BBAA6F /* WPAlertControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPAlertControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE63B54224873B500BBAA6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8BE63B55224873B500BBAA6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8BE63B57224873B500BBAA6F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8BE63B58224873B500BBAA6F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8BE63B5B224873B500BBAA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BE63B5D224873B700BBAA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BE63B60224873B700BBAA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BE63B62224873B700BBAA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE63B63224873B700BBAA6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BE63B69224873B700BBAA6F /* WPAlertControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPAlertControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE63B6D224873B700BBAA6F /* WPAlertControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPAlertControlTests.m; sourceTree = "<group>"; };
+		8BE63B6F224873B700BBAA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE63B74224873B700BBAA6F /* WPAlertControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPAlertControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE63B78224873B700BBAA6F /* WPAlertControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPAlertControlUITests.m; sourceTree = "<group>"; };
+		8BE63B7A224873B700BBAA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE63B86224873CA00BBAA6F /* WPAlertControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAlertControl.h; sourceTree = "<group>"; };
+		8BE63B87224873CA00BBAA6F /* WPAlertControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAlertControl.m; sourceTree = "<group>"; };
+		8BE63B8F2248BB4F00BBAA6F /* WPView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPView.h; sourceTree = "<group>"; };
+		8BE63B902248BB4F00BBAA6F /* WPView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BE63B4E224873B500BBAA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE63B66224873B700BBAA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE63B71224873B700BBAA6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BE63B48224873B500BBAA6F = {
+			isa = PBXGroup;
+			children = (
+				8BE63B53224873B500BBAA6F /* WPAlertControl */,
+				8BE63B6C224873B700BBAA6F /* WPAlertControlTests */,
+				8BE63B77224873B700BBAA6F /* WPAlertControlUITests */,
+				8BE63B52224873B500BBAA6F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BE63B52224873B500BBAA6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BE63B51224873B500BBAA6F /* WPAlertControl.app */,
+				8BE63B69224873B700BBAA6F /* WPAlertControlTests.xctest */,
+				8BE63B74224873B700BBAA6F /* WPAlertControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BE63B53224873B500BBAA6F /* WPAlertControl */ = {
+			isa = PBXGroup;
+			children = (
+				8BE63B86224873CA00BBAA6F /* WPAlertControl.h */,
+				8BE63B87224873CA00BBAA6F /* WPAlertControl.m */,
+				8BE63B54224873B500BBAA6F /* AppDelegate.h */,
+				8BE63B55224873B500BBAA6F /* AppDelegate.m */,
+				8BE63B57224873B500BBAA6F /* ViewController.h */,
+				8BE63B58224873B500BBAA6F /* ViewController.m */,
+				8BE63B5A224873B500BBAA6F /* Main.storyboard */,
+				8BE63B5D224873B700BBAA6F /* Assets.xcassets */,
+				8BE63B5F224873B700BBAA6F /* LaunchScreen.storyboard */,
+				8BE63B62224873B700BBAA6F /* Info.plist */,
+				8BE63B63224873B700BBAA6F /* main.m */,
+				8BE63B8F2248BB4F00BBAA6F /* WPView.h */,
+				8BE63B902248BB4F00BBAA6F /* WPView.m */,
+			);
+			path = WPAlertControl;
+			sourceTree = "<group>";
+		};
+		8BE63B6C224873B700BBAA6F /* WPAlertControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BE63B6D224873B700BBAA6F /* WPAlertControlTests.m */,
+				8BE63B6F224873B700BBAA6F /* Info.plist */,
+			);
+			path = WPAlertControlTests;
+			sourceTree = "<group>";
+		};
+		8BE63B77224873B700BBAA6F /* WPAlertControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BE63B78224873B700BBAA6F /* WPAlertControlUITests.m */,
+				8BE63B7A224873B700BBAA6F /* Info.plist */,
+			);
+			path = WPAlertControlUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BE63B50224873B500BBAA6F /* WPAlertControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE63B7D224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControl" */;
+			buildPhases = (
+				8BE63B4D224873B500BBAA6F /* Sources */,
+				8BE63B4E224873B500BBAA6F /* Frameworks */,
+				8BE63B4F224873B500BBAA6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WPAlertControl;
+			productName = WPAlertControl;
+			productReference = 8BE63B51224873B500BBAA6F /* WPAlertControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BE63B68224873B700BBAA6F /* WPAlertControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE63B80224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControlTests" */;
+			buildPhases = (
+				8BE63B65224873B700BBAA6F /* Sources */,
+				8BE63B66224873B700BBAA6F /* Frameworks */,
+				8BE63B67224873B700BBAA6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BE63B6B224873B700BBAA6F /* PBXTargetDependency */,
+			);
+			name = WPAlertControlTests;
+			productName = WPAlertControlTests;
+			productReference = 8BE63B69224873B700BBAA6F /* WPAlertControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BE63B73224873B700BBAA6F /* WPAlertControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE63B83224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControlUITests" */;
+			buildPhases = (
+				8BE63B70224873B700BBAA6F /* Sources */,
+				8BE63B71224873B700BBAA6F /* Frameworks */,
+				8BE63B72224873B700BBAA6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BE63B76224873B700BBAA6F /* PBXTargetDependency */,
+			);
+			name = WPAlertControlUITests;
+			productName = WPAlertControlUITests;
+			productReference = 8BE63B74224873B700BBAA6F /* WPAlertControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BE63B49224873B500BBAA6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Developer;
+				TargetAttributes = {
+					8BE63B50224873B500BBAA6F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8BE63B68224873B700BBAA6F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8BE63B50224873B500BBAA6F;
+					};
+					8BE63B73224873B700BBAA6F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8BE63B50224873B500BBAA6F;
+					};
+				};
+			};
+			buildConfigurationList = 8BE63B4C224873B500BBAA6F /* Build configuration list for PBXProject "WPAlertControl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BE63B48224873B500BBAA6F;
+			productRefGroup = 8BE63B52224873B500BBAA6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BE63B50224873B500BBAA6F /* WPAlertControl */,
+				8BE63B68224873B700BBAA6F /* WPAlertControlTests */,
+				8BE63B73224873B700BBAA6F /* WPAlertControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BE63B4F224873B500BBAA6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE63B61224873B700BBAA6F /* LaunchScreen.storyboard in Resources */,
+				8BE63B5E224873B700BBAA6F /* Assets.xcassets in Resources */,
+				8BE63B5C224873B500BBAA6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE63B67224873B700BBAA6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE63B72224873B700BBAA6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BE63B4D224873B500BBAA6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE63B59224873B500BBAA6F /* ViewController.m in Sources */,
+				8BE63B64224873B700BBAA6F /* main.m in Sources */,
+				8BE63B912248BB4F00BBAA6F /* WPView.m in Sources */,
+				8BE63B56224873B500BBAA6F /* AppDelegate.m in Sources */,
+				8BE63B88224873CA00BBAA6F /* WPAlertControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE63B65224873B700BBAA6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE63B6E224873B700BBAA6F /* WPAlertControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE63B70224873B700BBAA6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE63B79224873B700BBAA6F /* WPAlertControlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BE63B6B224873B700BBAA6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BE63B50224873B500BBAA6F /* WPAlertControl */;
+			targetProxy = 8BE63B6A224873B700BBAA6F /* PBXContainerItemProxy */;
+		};
+		8BE63B76224873B700BBAA6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BE63B50224873B500BBAA6F /* WPAlertControl */;
+			targetProxy = 8BE63B75224873B700BBAA6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BE63B5A224873B500BBAA6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BE63B5B224873B500BBAA6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BE63B5F224873B700BBAA6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BE63B60224873B700BBAA6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BE63B7B224873B700BBAA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8BE63B7C224873B700BBAA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BE63B7E224873B700BBAA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZFMHLD4Y;
+				INFOPLIST_FILE = WPAlertControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alert.WPAlertControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BE63B7F224873B700BBAA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZFMHLD4Y;
+				INFOPLIST_FILE = WPAlertControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alert.WPAlertControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8BE63B81224873B700BBAA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZFMHLD4Y;
+				INFOPLIST_FILE = WPAlertControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alert.WPAlertControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WPAlertControl.app/WPAlertControl";
+			};
+			name = Debug;
+		};
+		8BE63B82224873B700BBAA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZFMHLD4Y;
+				INFOPLIST_FILE = WPAlertControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alert.WPAlertControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WPAlertControl.app/WPAlertControl";
+			};
+			name = Release;
+		};
+		8BE63B84224873B700BBAA6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZFMHLD4Y;
+				INFOPLIST_FILE = WPAlertControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alert.WPAlertControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WPAlertControl;
+			};
+			name = Debug;
+		};
+		8BE63B85224873B700BBAA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSZFMHLD4Y;
+				INFOPLIST_FILE = WPAlertControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alert.WPAlertControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WPAlertControl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BE63B4C224873B500BBAA6F /* Build configuration list for PBXProject "WPAlertControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE63B7B224873B700BBAA6F /* Debug */,
+				8BE63B7C224873B700BBAA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE63B7D224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE63B7E224873B700BBAA6F /* Debug */,
+				8BE63B7F224873B700BBAA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE63B80224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE63B81224873B700BBAA6F /* Debug */,
+				8BE63B82224873B700BBAA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE63B83224873B700BBAA6F /* Build configuration list for PBXNativeTarget "WPAlertControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE63B84224873B700BBAA6F /* Debug */,
+				8BE63B85224873B700BBAA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BE63B49224873B500BBAA6F /* Project object */;
+}
