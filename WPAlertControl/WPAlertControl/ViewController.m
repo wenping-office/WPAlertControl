@@ -87,7 +87,7 @@
             }];
             view2.frame = CGRectMake(0, 0, screenSize.width, 300);
             view2.backgroundColor = [UIColor blueColor];
-            alertControl.pushAnimateView =  view2;
+            [alertControl setPushView:view2];
             
         }];
         
@@ -109,7 +109,7 @@
             }];
             view2.frame = CGRectMake(0, 0, 200,200 );
             view2.backgroundColor = [UIColor blueColor];
-            alertControl.pushAnimateView =  view2;
+            [alertControl setPushView:view2];
             
         }];
         
@@ -126,21 +126,18 @@
     WPView *view1 = [WPView viewWithTapClick:^(id other) {
         
         [WPAlertControl alertHiddenForRootControl:self completion:^(WPAlertShowStatus status, WPAlertControl *alertControl) {
-            
             WPView *view2 = [WPView viewWithTapClick:^(id other) {
                 [WPAlertControl alertHiddenForRootControl:self completion:nil];
             }];
             view2.frame = CGRectMake(0, 0, screenSize.width, 300);
             view2.backgroundColor = [UIColor blueColor];
-            alertControl.pushAnimateView =  view2;
-            
+            [alertControl setPushView:view2];
         }];
-        
     }];
     view1.frame = CGRectMake(0, 0, screenSize.width, 150);
     view1.backgroundColor = [UIColor redColor];
     
-    [WPAlertControl alertForView:view1 begin:WPAlertBeginBottem end:WPAlertEndBottem animateType:WPAlertAnimateDefault constant:0 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self mackClick:nil animateStatus:nil];
+    [WPAlertControl alertForView:view1 begin:WPAlertBeginBottem end:WPAlertEndBottem animateType:WPAlertAnimateDefault constant:0 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:YES rootControl:self mackClick:nil animateStatus:nil];
 }
 
 - (void)rightAlert
@@ -154,8 +151,8 @@
             }];
             view2.frame = CGRectMake(0, 0, 150, 150);
             view2.backgroundColor = [UIColor blueColor];
-            alertControl.pushAnimateView =  view2;
-            
+
+            [alertControl setPushView:view2 begin:WPAlertBeginBottem end:WPAlertEndCenter animateType:WPAlertAnimateDefault pan:NO constant:0];
         }];
         
     }];
@@ -177,8 +174,7 @@
             }];
             view2.frame = CGRectMake(0, 0, 150, 150);
             view2.backgroundColor = [UIColor blueColor];
-            alertControl.pushAnimateView =  view2;
-            
+            [alertControl setPushView:view2];
         }];
         
     }];
@@ -194,13 +190,31 @@
     WPView *view1 = [WPView viewWithTapClick:^(id other) {
         
         [WPAlertControl alertHiddenForRootControl:self completion:^(WPAlertShowStatus status, WPAlertControl *alertControl) {
-            
-            WPView *view2 = [WPView viewWithTapClick:^(id other) {
-                [WPAlertControl alertHiddenForRootControl:self completion:nil];
+
+            WPAlertItem *item1 = [WPAlertItem itemSettingCell:^(WPAlertControlCell *cell) {
+                cell.textLabel.text = @"男";
+                cell.detailTextLabel.text = @"子标题";
+                cell.detailTextLabel.textColor = [UIColor redColor];
             }];
-            view2.frame = CGRectMake(0, 0, screenSize.width, 150);
-            view2.backgroundColor = [UIColor blueColor];
-            alertControl.pushAnimateView =  view2;
+            
+            WPAlertItem *item2 = [WPAlertItem itemSettingCell:^(WPAlertControlCell *cell) {
+                cell.textLabel.text = @"女";
+                cell.detailTextLabel.text = @"子标题";
+            }];
+            WPAlertGroup *group = [WPAlertGroup groupForTitle:@"请问您性别?" items:@[item1,item2]];
+            
+            [alertControl setPushItems:@[group] pushItemsClick:^NSArray<WPAlertGroup *> *(NSInteger index, NSUInteger alertLevel, WPAlertControl *alertControl) {
+                
+                WPView *view2 = [WPView viewWithTapClick:^(id other) {
+                    [WPAlertControl alertHiddenForRootControl:self completion:nil];
+                }];
+                view2.frame = CGRectMake(0, 0, screenSize.width*0.5, 150);
+                view2.backgroundColor = [UIColor blueColor];
+                
+                [alertControl setPushView:view2 begin:WPAlertBeginCenter end:WPAlertEndCenter animateType:WPAlertAnimateBounce pan:YES constant:0];
+
+                return nil;
+            }];
             
         }];
         
@@ -278,6 +292,5 @@
     
     return nil;
 }
-
 
 @end

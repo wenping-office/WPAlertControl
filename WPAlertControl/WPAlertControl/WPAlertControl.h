@@ -8,11 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-// 弹出弹框
-#define WPAlertShow(target,showView) [WPAlertControl alertForView:(showView) begin:WPAlertControlBeginCenterType end:WPAlertControlEndCenterType animateType:WPAlertControlAnimateType constant:0 animageBeginInterval:WPAlertControlShowTime animageEndInterval:WPAlertControlEndTime maskColor:WPAlertControlMaskColor pan:NO rootControl:(target) mackClick:nil animateStatus:nil]
-
-#define WPAlertBottemShow(target,showView) [WPAlertControl alertForView:(showView) begin:WPAlertControlBeginBottemType end:WPAlertControlEndBottemType animateType:WPAlertControlAnimateType constant:0 animageBeginInterval:WPAlertControlShowTime animageEndInterval:WPAlertControlEndTime maskColor:WPAlertControlMaskColor pan:NO rootControl:(target) mackClick:nil animateStatus:nil]
-
 // 隐藏弹框
 #define WPAlertHidden(target) [WPAlertControl alertHiddenForRootControl:(target) completion:nil]
 
@@ -73,19 +68,20 @@ typedef void(^setttingControlCell)(WPAlertControlCell *cell);
  * masClick 蒙版点击执行 return YES 蒙版不会消失 NO蒙版消失 默认YES
  * animateStatus alert弹框的当前状态 即将显示 -> 显示完成 -> 即将消失 -> 消失完成
  * alertLevel 当前动画的等级 默认为1 设置了pushAnimateView后会累加
+ * animateType 动画类型
  */
 + (instancetype)alertForView:(UIView *)animateView begin:(WPAlertBeginType)type end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType constant:(CGFloat)constant animageBeginInterval:(CGFloat)beginInterval animageEndInterval:(CGFloat)endInterval maskColor:(UIColor *)color  pan:(BOOL)pan rootControl:(UIViewController *)rootControl  mackClick:(MaskClickBlock)click animateStatus:(AlertAnimateStatus)animateStatus;
 
 /** 创建一个item选择弹框
  * items 菜单内容
  * index item 点击的索引
- * constant 常量 默认0 -1==居中 动画结束时候的frame+上常量 可以微调动画结束后的frame
+ * constant 常量 默认0 -1==居中 动画结束时候的frame+上常量 可以微调动画结束后的frame 当begin==end的时候有效
  * beginInterval 视图弹出的持续时间
  * endInterval 视图结束弹出的时间
  * masColor 蒙版的颜色
  * pan 是否支持拖动隐藏
  * rootControl alert弹出试图的根控制器
- * masClick 蒙版点击执行 return YES 蒙版不会消失 NO蒙版消失 默认YES
+ * masClick 蒙版点击执行 return NO蒙版不会消失 YES蒙版消失 默认YES
  * animateStatus alert弹框的当前状态 即将显示 -> 显示完成 -> 即将消失 -> 消失完成
  * alertLevel 当前动画的等级 默认为1 设置了pushAnimateView后会累加
  */
@@ -97,11 +93,24 @@ typedef void(^setttingControlCell)(WPAlertControlCell *cell);
 /** 获得当前的弹框控制器 */
 + (instancetype)currentAlertControFor:(UIViewController *)rootControl;
 
-/** 下个动画视图 */
-@property (nonatomic,strong) UIView *pushAnimateView;
-
-/** 设置pushItems */
+/** 设置下个Items */
 - (void)setPushItems:(NSArray <WPAlertGroup *>*)items pushItemsClick:(ItemClick)click;
+
+/** 设置下个视图 */
+- (void)setPushView:(UIView *)pushView;
+
+/** 设置下个视图 */
+- (void)setPushView:(UIView *)pushView begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType;
+
+/** 设置下个视图 */
+- (void)setPushView:(UIView *)pushView begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType pan:(BOOL)pan constant:(CGFloat)constant;
+
+/** 设置下个视图 */
+- (void)setPushView:(UIView *)pushView begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType pan:(BOOL)pan constant:(CGFloat)constant;
+
+/** 设置下个视图 */
+- (void)setPushView:(UIView *)pushView begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType pan:(BOOL)pan constant:(CGFloat)constant animageBeginInterval:(CGFloat)beginInterval animageEndInterval:(CGFloat)endInterval;
+
 
 @end
 

@@ -35,6 +35,8 @@
 @property (nonatomic,copy) MaskClickBlock maskClick;
 /** 动画类型 */
 @property (nonatomic,assign) WPAlertAnimateType animateType;
+/** push结束动画 中间变量*/
+@property (nonatomic,assign) WPAlertEndType pushEndType;
 /** item模式数组 */
 @property (nonatomic,strong) NSArray <WPAlertGroup *>*items;
 /** item模式数组 */
@@ -55,6 +57,8 @@
 @property (nonatomic,assign) CGFloat animageBeginInterval;
 /** 动画结束持续时间 */
 @property (nonatomic,assign) CGFloat animageEndInterval;
+/** 下个动画视图 */
+@property (nonatomic,strong) UIView *pushAnimateView;
 @end
 
 @implementation WPAlertControl (WPExtension)
@@ -240,6 +244,12 @@
     return self;
 }
 
+- (void)setEndType:(WPAlertEndType)endType
+{
+    _endType = endType;
+    self.pushEndType = endType;
+}
+
 - (UIColor *)maskBeginColor
 {
     if (!_maskBeginColor) {
@@ -297,6 +307,7 @@
 - (void)beginAnimateIsImplementBlock:(BOOL)isImplement
 {
     self.alertLevel++;
+    
     if (self.animateType == WPAlertAnimateDefault) {
         [self animateDefaultBeginIsImplementBlock:isImplement];
         
@@ -371,6 +382,7 @@
                 self.animateStatus(WPAnimateDidAppear,self);
             }
         }
+        self.pushAnimateView = nil;
     }];
 }
 
@@ -410,6 +422,7 @@
                 self.animateStatus(WPAnimateDidAppear,self);
             }
         }
+        self.pushAnimateView = nil;
     }];
 }
 
@@ -430,7 +443,7 @@
     } completion:^(BOOL finished) {
         self.mask.userInteractionEnabled = NO;
         [self.animateView removeFromSuperview];
-        
+        self.endType = self.pushEndType;
         if (self.pushAnimateView) {
             self.animateView = self.pushAnimateView;
             
@@ -445,6 +458,7 @@
             [self beginAnimateIsImplementBlock:YES];
             
         }else{
+            
             if (self.animateStatus) {
                 self.animateStatus(WPAnimateDidDisappear,self);
             }
@@ -455,6 +469,33 @@
             [self dismissViewControllerAnimated:NO completion:nil];
         }
     }];
+}
+
+- (void)setPushView:(UIView *)pushView
+{
+    self.pushAnimateView = pushView;
+}
+
+- (void)setPushView:(UIView *)pushView begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType
+{
+    self.beginType = beginType;
+    self.pushEndType = endType;
+    self.animateType = animateType;
+    self.pushAnimateView = pushView;
+}
+
+- (void)setPushView:(UIView *)pushView begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType pan:(BOOL)pan constant:(CGFloat)constant
+{
+    self.constant = constant;
+    self.isPan = pan;
+    [self setPushView:pushView begin:beginType end:endType animateType:animateType];
+}
+
+- (void)setPushView:(UIView *)pushView begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType pan:(BOOL)pan constant:(CGFloat)constant animageBeginInterval:(CGFloat)beginInterval animageEndInterval:(CGFloat)endInterval
+{
+    self.animageBeginInterval = beginInterval;
+    self.animageEndInterval = endInterval;
+    [self setPushView:pushView begin:beginType end:endType animateType:animateType pan:pan constant:constant];
 }
 
 - (void)setAnimateView:(UIView *)animateView
@@ -593,6 +634,9 @@
 
 - (void)setPushItems:(NSArray<WPAlertGroup *> *)items pushItemsClick:(ItemClick)click
 {
+    self.beginType = WPAlertBeginBottem;
+    self.pushEndType = WPAlertEndBottem;
+    self.isPan = NO;
     self.pushItems = items;
     self.itemBlock = click;
 }
@@ -705,6 +749,7 @@
             if (moveX < self.endConstantFrame.size.width * pad) { // 复位
                 [self beginAnimateIsImplementBlock:NO];
             }else{ // 结束弹框
+                
                 [self endAnimate];
             }
         }else if (self.endType == WPAlertEndTop && self.beginType == WPAlertBeginTop){
