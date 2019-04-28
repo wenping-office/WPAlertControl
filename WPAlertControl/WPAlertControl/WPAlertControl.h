@@ -70,7 +70,7 @@ typedef void(^setttingControlCell)(WPAlertControlCell *cell);
  * alertLevel 当前动画的等级 默认为1 设置了pushAnimateView后会累加
  * animateType 动画类型
  */
-+ (instancetype)alertForView:(UIView *)animateView begin:(WPAlertBeginType)type end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType constant:(CGFloat)constant animageBeginInterval:(CGFloat)beginInterval animageEndInterval:(CGFloat)endInterval maskColor:(UIColor *)color  pan:(BOOL)pan rootControl:(UIViewController *)rootControl  mackClick:(MaskClickBlock)click animateStatus:(AlertAnimateStatus)animateStatus;
++ (instancetype)alertForView:(UIView *)animateView begin:(WPAlertBeginType)type end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType constant:(CGFloat)constant animageBeginInterval:(CGFloat)beginInterval animageEndInterval:(CGFloat)endInterval maskColor:(UIColor *)color  pan:(BOOL)pan rootControl:(UIViewController *)rootControl  maskClick:(MaskClickBlock)click animateStatus:(AlertAnimateStatus)animateStatus;
 
 /** 创建一个item选择弹框
  * items 菜单内容
@@ -85,7 +85,7 @@ typedef void(^setttingControlCell)(WPAlertControlCell *cell);
  * animateStatus alert弹框的当前状态 即将显示 -> 显示完成 -> 即将消失 -> 消失完成
  * alertLevel 当前动画的等级 默认为1 设置了pushAnimateView后会累加
  */
-+ (instancetype)alertForItems:(NSArray <WPAlertGroup *>*)items index:(ItemClick)index begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType constant:(CGFloat)constant animageBeginInterval:(CGFloat)beginInterval animageEndInterval:(CGFloat)endInterval maskColor:(UIColor *)color pan:(BOOL)pan rootControl:(UIViewController *)rootControl mackClick:(MaskClickBlock)click animateStatus:(AlertAnimateStatus)animateStatus;
++ (instancetype)alertForItems:(NSArray <WPAlertGroup *>*)items index:(ItemClick)index begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType constant:(CGFloat)constant animageBeginInterval:(CGFloat)beginInterval animageEndInterval:(CGFloat)endInterval maskColor:(UIColor *)color pan:(BOOL)pan rootControl:(UIViewController *)rootControl maskClick:(MaskClickBlock)click animateStatus:(AlertAnimateStatus)animateStatus;
 
 /** 弹框消失 */
 + (void)alertHiddenForRootControl:(UIViewController *)control completion:(AlertAnimateStatus)completion;
@@ -101,9 +101,6 @@ typedef void(^setttingControlCell)(WPAlertControlCell *cell);
 
 /** 设置下个视图 */
 - (void)setPushView:(UIView *)pushView begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType;
-
-/** 设置下个视图 */
-- (void)setPushView:(UIView *)pushView begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType pan:(BOOL)pan constant:(CGFloat)constant;
 
 /** 设置下个视图 */
 - (void)setPushView:(UIView *)pushView begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType pan:(BOOL)pan constant:(CGFloat)constant;

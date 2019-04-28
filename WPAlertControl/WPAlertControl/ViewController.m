@@ -95,7 +95,7 @@
     view1.frame = CGRectMake(0, 0, screenSize.width, 150);
     view1.backgroundColor = [UIColor redColor];
     
-    [WPAlertControl alertForView:view1 begin:WPAlertBeginBottem end:WPAlertEndBottem animateType:WPAlertAnimateDefault constant:-1 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self mackClick:nil animateStatus:nil];
+    [WPAlertControl alertForView:view1 begin:WPAlertBeginBottem end:WPAlertEndBottem animateType:WPAlertAnimateDefault constant:-1 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self maskClick:nil animateStatus:nil];
 }
 
 - (void)centerAlert
@@ -117,7 +117,7 @@
     view1.frame = CGRectMake(0, 0, 150, 150);
     view1.backgroundColor = [UIColor redColor];
     
-    [WPAlertControl alertForView:view1 begin:WPAlertBeginCenter end:WPAlertEndCenter animateType:WPAlertAnimateBounce constant:0 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self mackClick:nil animateStatus:nil];
+    [WPAlertControl alertForView:view1 begin:WPAlertBeginCenter end:WPAlertEndCenter animateType:WPAlertAnimateBounce constant:0 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self maskClick:nil animateStatus:nil];
 }
 
 - (void)bottemAlert
@@ -137,7 +137,7 @@
     view1.frame = CGRectMake(0, 0, screenSize.width, 150);
     view1.backgroundColor = [UIColor redColor];
     
-    [WPAlertControl alertForView:view1 begin:WPAlertBeginBottem end:WPAlertEndBottem animateType:WPAlertAnimateDefault constant:0 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:YES rootControl:self mackClick:nil animateStatus:nil];
+    [WPAlertControl alertForView:view1 begin:WPAlertBeginBottem end:WPAlertEndBottem animateType:WPAlertAnimateDefault constant:0 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:YES rootControl:self maskClick:nil animateStatus:nil];
 }
 
 - (void)rightAlert
@@ -159,7 +159,7 @@
     view1.frame = CGRectMake(0, 0, 200, 200);
     view1.backgroundColor = [UIColor redColor];
     
-    [WPAlertControl alertForView:view1 begin:WPAlertBeginRight end:WPAlertEndBottem animateType:WPAlertAnimateBounce constant:-1 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self mackClick:nil animateStatus:nil];
+    [WPAlertControl alertForView:view1 begin:WPAlertBeginRight end:WPAlertEndBottem animateType:WPAlertAnimateBounce constant:-1 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self maskClick:nil animateStatus:nil];
 }
 
 - (void)leftAlert
@@ -181,7 +181,7 @@
     view1.frame = CGRectMake(0, 0, 200, 200);
     view1.backgroundColor = [UIColor redColor];
     
-    [WPAlertControl alertForView:view1 begin:WPAlertBeginLeft end:WPAlertEndRight animateType:WPAlertAnimateBounce constant:-1 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self mackClick:nil animateStatus:nil];
+    [WPAlertControl alertForView:view1 begin:WPAlertBeginLeft end:WPAlertEndRight animateType:WPAlertAnimateBounce constant:-1 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self maskClick:nil animateStatus:nil];
 }
 
 - (void)topAlert
@@ -222,7 +222,7 @@
     view1.frame = CGRectMake(0, 0, screenSize.width, 200);
     view1.backgroundColor = [UIColor redColor];
     
-    [WPAlertControl alertForView:view1 begin:WPAlertBeginTop end:WPAlertEndTop animateType:WPAlertAnimateDefault constant:0 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self mackClick:nil animateStatus:nil];
+    [WPAlertControl alertForView:view1 begin:WPAlertBeginTop end:WPAlertEndTop animateType:WPAlertAnimateDefault constant:0 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self maskClick:nil animateStatus:nil];
 }
 
 - (void)itemsAlert
@@ -241,7 +241,7 @@
     
     [WPAlertControl alertForItems:@[group] index:^NSArray<WPAlertGroup *> *(NSInteger index, NSUInteger alertLevel, WPAlertControl *alertControl) {
         return [self groupsForAlertLeve:alertLevel index:index];
-    } begin:WPAlertBeginBottem end:WPAlertEndBottem animateType:WPAlertAnimateDefault constant:0 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self mackClick:nil animateStatus:nil];
+    } begin:WPAlertBeginBottem end:WPAlertEndBottem animateType:WPAlertAnimateDefault constant:0 animageBeginInterval:0.3 animageEndInterval:0.3 maskColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3] pan:NO rootControl:self maskClick:nil animateStatus:nil];
     
 }
 

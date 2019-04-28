@@ -93,13 +93,13 @@
         }
     }
     
-    return [self alertForItems:groups index:index begin:WPAlertBeginBottem end:WPAlertEndBottem animateType:animateType constant:0 animageBeginInterval:alertTimeBeginInterval animageEndInterval:alertTimeEndInterval maskColor:nil pan:YES rootControl:rootControl mackClick:nil animateStatus:nil];
+    return [self alertForItems:groups index:index begin:WPAlertBeginBottem end:WPAlertEndBottem animateType:animateType constant:0 animageBeginInterval:alertTimeBeginInterval animageEndInterval:alertTimeEndInterval maskColor:nil pan:YES rootControl:rootControl maskClick:nil animateStatus:nil];
 }
 @end
 
 @implementation WPAlertControl
 
-+ (instancetype)alertForView:(UIView *)inputView begin:(WPAlertBeginType)type end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType constant:(CGFloat)constant animageBeginInterval:(CGFloat)beginInterval animageEndInterval:(CGFloat)endInterval maskColor:(UIColor *)maskColor pan:(BOOL)pan rootControl:(UIViewController *)rootControl mackClick:(MaskClickBlock)click animateStatus:(AlertAnimateStatus)animateStatus
++ (instancetype)alertForView:(UIView *)inputView begin:(WPAlertBeginType)type end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType constant:(CGFloat)constant animageBeginInterval:(CGFloat)beginInterval animageEndInterval:(CGFloat)endInterval maskColor:(UIColor *)maskColor pan:(BOOL)pan rootControl:(UIViewController *)rootControl maskClick:(MaskClickBlock)click animateStatus:(AlertAnimateStatus)animateStatus
 {
     WPAlertControl *controller = [WPAlertControl new];
     controller.animageBeginInterval = beginInterval;
@@ -118,7 +118,7 @@
     return controller;
 }
 
-+ (instancetype)alertForItems:(NSArray <WPAlertGroup *>*)items index:(ItemClick)index begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType constant:(CGFloat)constant animageBeginInterval:(CGFloat)beginInterval animageEndInterval:(CGFloat)endInterval maskColor:(UIColor *)maskColor pan:(BOOL)pan rootControl:(UIViewController *)rootControl mackClick:(MaskClickBlock)click animateStatus:(AlertAnimateStatus)animateStatus
++ (instancetype)alertForItems:(NSArray <WPAlertGroup *>*)items index:(ItemClick)index begin:(WPAlertBeginType)beginType end:(WPAlertEndType)endType animateType:(WPAlertAnimateType)animateType constant:(CGFloat)constant animageBeginInterval:(CGFloat)beginInterval animageEndInterval:(CGFloat)endInterval maskColor:(UIColor *)maskColor pan:(BOOL)pan rootControl:(UIViewController *)rootControl maskClick:(MaskClickBlock)click animateStatus:(AlertAnimateStatus)animateStatus
 {
     WPAlertControl *control = [WPAlertControl new];
     control.animageBeginInterval = beginInterval;
