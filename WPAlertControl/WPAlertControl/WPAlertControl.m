@@ -237,7 +237,6 @@
         [self setModalPresentationStyle:UIModalPresentationOverCurrentContext];
         self.view.clipsToBounds = YES;
         UIButton *mask = [UIButton new];
-        self.modalPresentationStyle = UIModalPresentationFullScreen;
         [mask addTarget:self action:@selector(maskTouch:) forControlEvents:UIControlEventTouchUpInside];
         _mask = mask;
         [self.view addSubview:mask];
