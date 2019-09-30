@@ -73,6 +73,8 @@
     [self.view addSubview:view4];
     [self.view addSubview:view5];
     [self.view addSubview:view6];
+    
+//    [WPAlertControl alertForView:<#(UIView *)#> begin:<#(WPAlertBeginType)#> end:<#(WPAlertEndType)#> animateType:<#(WPAlertAnimateType)#> constant:<#(CGFloat)#> animageBeginInterval:<#(CGFloat)#> animageEndInterval:<#(CGFloat)#> maskColor:<#(UIColor *)#> pan:<#(BOOL)#> rootControl:<#(UIViewController *)#> maskClick:<#^BOOL(NSInteger index, NSUInteger alertLevel, WPAlertControl *alertControl)click#> animateStatus:<#^(WPAlertShowStatus status, WPAlertControl *alertControl)animateStatus#>]
 }
 
 - (void)moveCenter
